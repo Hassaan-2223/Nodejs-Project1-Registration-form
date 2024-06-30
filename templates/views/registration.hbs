@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    {{!-- {{>navbar}} --}}
+    <div class="navigation navbar-light bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"> <i class="fa-solid fa-snowflake mx-1"></i> Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      {{!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index">Home</a>
+                      </li> --}}
+                      {{!-- <li class="nav-item">
+                        <a class="nav-link" href="/weather">Weather</a>
+                      </li> --}}
+                      <li class="nav-item">
+                        <a class="nav-link" href="/registration">Registration</a>
+                      </li>
+                      {{!-- <li class="nav-item">
+                        <a class="nav-link" href="/about">About us</a>
+                      </li> --}}
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            
+        </div>
+    </div>
+
+
+    <form action="/registration" method="POST">
+        <div  class="form container d-flex">
+            <h3>Registration Form</h3>
+            <div class="actual-form">
+                <div class="fname">
+                    <input type="text" name="fname" placeholder="Enter your first name" value="">
+                </div>
+                <div class="lname">
+                    <input type="text" name="lname" placeholder="Enter your last name" value="">
+                </div>
+                <div class="all-gender d-flex">
+                    <div class="gender d-flex">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" value="male">
+                    </div>
+                    <div class="gender d-flex">
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" value="female">
+                    </div>
+
+                </div>
+                <div class="address">
+                    <input type="text" name="address" placeholder="Enter your address">
+                </div>
+                <div class="email">
+                    <input type="email" name="email" placeholder="Enter your email" value="">
+                </div>
+                <div class="phone">
+                    <input type="tel" name="phone" placeholder="Enter your number" value="">
+                </div>
+                <div class="password">
+                    <input type="password" name="password" placeholder="Enter your password" value="">
+                </div>
+                <div class="cpassword">
+                    <input type="password" name="cpassword" placeholder="Confirm password" value="">
+                </div>
+                <div>
+                    <input type="submit" class="submit" value="registration">
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
